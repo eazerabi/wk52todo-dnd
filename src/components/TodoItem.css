@@ -1,0 +1,81 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f9f9f9;
+}
+
+.todo-item span {
+  flex-grow: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+button,
+.move-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.move-button:hover {
+  background-color: #f0f0f0;
+}
+
+.edit-button {
+  color: #007bff;
+}
+
+.delete-button {
+  color: #dc3545;
+}
+
+.save-button {
+  color: #28a745;
+}
+
+.move-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background-color: #49aa04ea;
+  color: rgb(250, 250, 250);
+}
+
+.move-up,
+.move-down {
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.move-up {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.move-up:hover,
+.move-down:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
